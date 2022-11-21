@@ -2,6 +2,7 @@
 #                                     Active smelling in the American cockroach: Figure 1                                 #
 ###########################################################################################################################
 
+# Author: Antoine Hoffmann
 # R version 4.2.0
 
 
