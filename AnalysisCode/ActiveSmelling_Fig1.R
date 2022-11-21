@@ -181,14 +181,6 @@ StreamWidthPID.mean$sd<-StreamWidthPID.sd$DV
 x=c(rev(-StreamWidthPID.mean$CenterDist),StreamWidthPID.mean$CenterDist) 
 y=c(rev(StreamWidthPID.mean$mean),StreamWidthPID.mean$mean)
 
-xsd=c(rev(c(rev(-StreamWidthPID.mean$CenterDist),StreamWidthPID.mean$CenterDist)),c(rev(-StreamWidthPID.mean$CenterDist),StreamWidthPID.mean$CenterDist)) 
-ysd=c(c(rev(StreamWidthPID.mean$mean),StreamWidthPID.mean$mean)+c(rev(StreamWidthPID.mean$sd),StreamWidthPID.mean$sd),
-      c(rev(StreamWidthPID.mean$mean),StreamWidthPID.mean$mean)-c(rev(StreamWidthPID.mean$sd),StreamWidthPID.mean$sd))
-ysd0=c(rev(StreamWidthPID.mean$mean),StreamWidthPID.mean$mean)-c(rev(StreamWidthPID.mean$sd),StreamWidthPID.mean$sd)
-ysd1=c(rev(StreamWidthPID.mean$mean),StreamWidthPID.mean$mean)+c(rev(StreamWidthPID.mean$sd),StreamWidthPID.mean$sd)
-
-
-
 
 pdf(file=paste("./Plots/StreamWidthPID_points.pdf",sep=""),width=5,height=5,bg="white",useDingbats=F)
 
